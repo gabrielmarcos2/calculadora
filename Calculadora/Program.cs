@@ -29,16 +29,13 @@ case "5":
 calculaExponenciacao();
 break;
 case "6":
-calculaRadiciacao();
-break;
-case "7":
 CalcularMDC();
 break;
-case "8":
+case "7":
 CalcularMédiaAritmética();
 break;
-case "9":
-Console.WriteLine("Projeto de encerramento do 1º módulo feito em C#\n user: camilalocatelli");
+case "8":
+Console.WriteLine("Projeto de encerramento do 1º módulo feito em C#\n user: gabrielmarcos2 ");
 break;
 case "0":
 Console.WriteLine("\nObrigada por utilizar meu programa :)");
@@ -59,21 +56,19 @@ static void exibeMenu()
 {
 
 Console.ForegroundColor = ConsoleColor.Magenta;
-Console.WriteLine("¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_");
-Console.WriteLine("¯_¯_------------------------¯_¯_");
-Console.WriteLine("¯_¯_      CALCULADORA       ¯_¯_");
-Console.WriteLine("¯_¯_------------------------¯_¯_");
-Console.WriteLine("¯_¯_[1] SOMA                ¯_¯_");
-Console.WriteLine("¯_¯_[2] SUBTRAÇÃO           ¯_¯_");
-Console.WriteLine("¯_¯_[3] MULTIPLICAÇÃO       ¯_¯_");
-Console.WriteLine("¯_¯_[4] DIVISÃO             ¯_¯_");
-Console.WriteLine("¯_¯_[5] EXPONENCIAÇÃO       ¯_¯_");
-Console.WriteLine("¯_¯_[6] RADICIAÇÃO          ¯_¯_");
-Console.WriteLine("¯_¯_[7] MAIOR DIVISOR COMUM ¯_¯_");
-Console.WriteLine("¯_¯_[8] MÉDIA ARITMÉTICA    ¯_¯_");
-Console.WriteLine("¯_¯_[9] SOBRE O PROJETO     ¯_¯_");
-Console.WriteLine("¯_¯_[0] SAIR                ¯_¯_");
-Console.WriteLine("¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_¯_\n");
+Console.WriteLine("------------------------");
+Console.WriteLine("      CALCULADORA       ");
+Console.WriteLine("------------------------_");
+Console.WriteLine("[1] SOMA                ");
+Console.WriteLine("[2] SUBTRAÇÃO           ");
+Console.WriteLine("[3] MULTIPLICAÇÃO       ");
+Console.WriteLine("[4] DIVISÃO             ");
+Console.WriteLine("[5] EXPONENCIAÇÃO       ");
+Console.WriteLine("[6] RADICIAÇÃO          ");
+Console.WriteLine("[7] MÉDIA ARITMÉTICA    ");
+Console.WriteLine("[8] SOBRE O PROJETO     ");
+Console.WriteLine("[0] SAIR                ");
+
 
 Console.ResetColor();
 }
@@ -169,26 +164,6 @@ static void calculaExponenciacao()
     Console.WriteLine($"A potência de {b} elevado a {p} é igual a {resultado:N2}");
     }
 
-static void calculaRadiciacao()
-{
-     double numero, resultado;
-    
-     Console.WriteLine("\nOperação Radiciação Selecionada. \n");
-     Console.Write("Digite um Número: ");
-     Console.Write("");
-     numero = Convert.ToDouble(Console.ReadLine());
-
-     if (numero <0)
-     {
-     Console.WriteLine("Não existem raízes de números negativos!");
-     }
-
-     else 
-     {
-     resultado = Math.Sqrt(numero);
-     Console.WriteLine($"A raiz de {numero} é igual a {resultado:N2}");
-     }
-}
 
 static void CalcularMDC()
 {
